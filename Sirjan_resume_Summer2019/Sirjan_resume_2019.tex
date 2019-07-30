@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Sirjan}{Sapkota}{\urlstyle{same}{105 Collings St., BRC 340, Clemson SC 29634} | 
+\href{mailto:ssapkot@g.clemson.edu}{ssapkot@clemson.edu} | \textbf{Mobile:} 706.351.0302 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.31\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\subsection{Clemson University}
+\descript{PhD candidate, Plant Science}
+\location{ABD, Exp. graduation: Dec 2019}
+\sectionsep
+
+\subsection{University of Georgia}
+\descript{MS in Horticulture}
+\location{Dec 2014 | Athens, GA}
+\sectionsep
+
+\subsection{Tribhuvan University}
+\descript{B. Sc. Agriculture}
+\location{ Dec 2010 |  Kathmandu, Nepal}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/sirjansapkota}{\bf sirjansapkota} \\
+LinkedIn:// \href{https://www.linkedin.com/in/sirjan-sapkota-09787049/}{\bf sirjansapkota} \\
+Twitter://  \href{https://twitter.com/seerzan}{\bf @seerzan} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Courseworks}
+Bioinformatics \\
+Computational Genomics \\
+Design \& Analysis of Experiments \\
+Population \& Quantitative Genetics \\
+Advanced Genetics \\
+Advanced Plant Breeding \\
+Gene Technology \\
+Responsible Science \\
+Communication Seminar \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\subsection{Programming}
+Shell \textbullet{} Python \textbullet{} R \textbullet{} Git \textbullet{} AWS \\
+MS office \textbullet{} \TeX\ \textbullet{} Markdown \textbullet{} Jupyter \\ 
+\sectionsep
+\textbf{Proficiency in }
+\vspace{\topsep}
+\begin{tightemize}
+\item R Packages: dplyr, purrr, ggplot2, plotly, lme4, nlme, rrBLUP, BGLR, randomForest, R/qtl, pegas, heritability, GAPIT, doMC, doParallel, foreach.
+\item Python Packages: pandas, numpy, scipy, scrapy, matplotlib, seaborn, plotly, StatsModels, scikit-learn
+\end{tightemize}
+\sectionsep
+\subsection{Breeding and Genetics}
+RNA-DNA techniques \textbullet{} Sequencing technology \textbullet{}
+Genetic Mapping \textbullet{} \\
+Genomic Analysis \textbullet{}
+High-throughput phenotyping \textbullet{} predictive modeling \textbullet{}\\
+germplasm characterization \textbullet{} genomic prediction \textbullet{} big data analytics \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\subsection{Awards}
+%\vspace{\topsep}
+%\begin{tightemize}
+% \item New Frontiers Scholar, Corteva Agriscience\textsuperscript{\textregistered}, 2018.
+% \item Wade Stackhouse Fellowship, Clemson University, 2018-2020.
+%\item Full undergraduate scholarship, Tribhuvan University, 2007-2010.
+% \item Siddhartha Gold Medal,\\ Siddhartha English School, 2004.
+%\end{tightemize}
+%\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   GALLUP CLIFTONSTRENGTH TOP 5
+\textbf{GALLUP\textsuperscript{\textregistered} CliftonStrengths\textsuperscript{\texttrademark} Top 5}\\
+Includer \textbullet{} Ideation \textbullet{} Connectedness \\
+Positivity \textbullet{} Strategic \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.68\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Experience}
+\runsubsection{Clemson University}
+\descript{| \quad Graduate Research Assistant }
+\location{Jan 2017 - Present | Kresovich Lab, Clemson, SC}
+\sectionsep
+\textbf{Dissertation: Genome-assisted selection for grain yield and quality in sorghum}
+\vspace{\topsep}
+\begin{tightemize}
+\item Phenotypic and genomic selection in sorghum breeding.
+\item Genetic diversity, population structure, and germplasm characterization
+\item Bayesian inference  and random forest for model selection
+\item High throughput phenotypic data for grain and vegetative components
+\item Heterosis and combining ability of single cross hybrids in sorghum
+\end{tightemize}
+\sectionsep
+\runsubsection{University of Georgia}
+\descript{| \quad Graduate Research Assistant}
+\location{Aug 2012-Dec 2014 | Ozias-Akins Biotechnology Lab, Tifton, GA}
+\sectionsep
+\textbf{Thesis: Physical and genetic mapping of the ASGR-carrier chromosome in \textit{Pennisetum squamulatum}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \textit{In silico} and physical mapping using fluorescent \textit{in situ} hybridization.
+\item Targeted sequencing, \textit{de novo} assembly, sequence alignment and genetic mapping.
+\item Comparative genomics to identify synteny and lack of synteny.
+\end{tightemize}
+\sectionsep
+\runsubsection{Nepal Agriculture Research Council}
+\textbf{ | Research Assistant}
+\location{Jan 2011-Dec 2011 | Entomology Division, Lalitpur, Nepal}
+Biological control of potato tuber moth. Biopesticides in insect pest management.
+\sectionsep
+%\section{Teaching Experience}
+%\runsubsection{Clemson University}
+%\descript{| Graduate Teaching Assistant }
+%\location{Aug 2015 – Jun 2017 | Clemson, SC}
+%\begin{tightemize}
+%\item Courses: Population and quantitative genetics lab, Molecular genetics lab.
+%\item Taught senior and junior level lab classes. Responsibilities included teaching %material preparation, lecturing, and evaluations.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       REFEREES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References}
+\vspace{\topsep}
+\begin{tightemize}
+\item Stephen Kresovich, Clemson University, Clemson, SC, skresov@clemson.edu.
+\item Richard Boyles, Clemson University, Florence, SC, rboyles@clemson.edu.
+\item William Bridges, Clemson University, Clemson, SC, wbrdgs@clemson.edu.
+\item Peggy Ozias-Akins, University of Georgia, Tifton, GA, pozias@uga.edu.
+\end{tightemize}
+\end{minipage} 
+\end{document}  \documentclass[]{article}
