@@ -18,10 +18,10 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 ## Preview
 
 ### OpenFonts
-![alt tag](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/OpenFonts/sample-image.png)
+![alt tag]()
 
 ### MacFonts
-![alt tag](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/MacFonts/sample-image.png)
+![alt tag]()
 
 ## Dependencies
 
